@@ -1,0 +1,45 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft YaHei';
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  /* 去掉 轮播图 Chrome浏览器的错误警告 */
+  touch-action: pan-y;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dd {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+/* 解决 找房页面 展示遮罩层后，页面还会滚动的问题 */
+.body-fixed {
+  overflow: hidden;
+}
+
+.route-loading {
+  padding-top: 100px;
+  text-align: center;
+}

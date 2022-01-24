@@ -1,0 +1,43 @@
+.news {
+  padding: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.news .group-title {
+  margin: 10px 0 5px 10px;
+  font-size: 15px;
+}
+.news .news-item {
+  height: 120px;
+  padding: 15px 10px 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.news .news-item:last-child {
+  border: 0;
+}
+.news .imgwrap {
+  float: left;
+  height: 90px;
+  width: 120px;
+}
+.news .img {
+  height: 90px;
+  width: 120px;
+}
+.news .content {
+  overflow: hidden;
+  height: 100%;
+  padding-left: 12px;
+}
+.news .title {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.news .info {
+  width: 100%;
+  color: #9c9fa1;
+  font-size: 12px;
+}
+.news .message-title {
+  margin-bottom: 48px;
+}

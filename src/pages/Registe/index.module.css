@@ -1,0 +1,98 @@
+.root {
+  height: 100%;
+  background-color: #fff;
+}
+
+.navHeader {
+  background-color: #fff;
+}
+
+.backHome {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.backHome :global(a) {
+  color: #666;
+}
+
+:global(form div:last-child::after) {
+  height: 0;
+}
+
+.formItem {
+  position: relative;
+  display: flex;
+  height: 60px;
+  margin-bottom: 9px;
+}
+
+.formItem::after {
+  content: '';
+  position: absolute;
+  background-color: #ddd;
+  display: block;
+  z-index: 1;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+.input {
+  flex: 1;
+  height: 60px;
+  padding: 2px 0;
+  border: 0;
+  color: #000;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: #c0c0c0;
+}
+
+.label {
+  width: 85px;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 17px;
+}
+
+.formSubmit {
+  margin-top: 18px;
+}
+
+.submit {
+  display: block;
+  outline: 0 none;
+  -webkit-appearance: none;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  color: #fff;
+  background-color: rgb(28, 182, 118);
+  border: 1px solid rgb(28, 182, 118);
+  border-radius: 2px;
+  width: 100%;
+}
+
+.error {
+  color: red;
+}
